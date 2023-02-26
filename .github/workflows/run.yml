@@ -4,7 +4,9 @@ on:
   push:
     branches: 
       - master
-
+  repository_dispatch:
+    types:
+      - webhook-1
 env:
   UPDATE_IPV4: true
   UPDATE_IPV6: false
